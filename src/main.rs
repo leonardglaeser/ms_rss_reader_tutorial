@@ -1,9 +1,9 @@
 use windows::{
-    core::*, Data::Xml::Dom::*, Win32::Foundation::*, Win32::System::Threading::*,
+    core::*,
     Win32::UI::WindowsAndMessaging::*,
 };
 use windows::Web::Syndication::{
-ISyndicationText, RetrievalProgress, SyndicationClient, SyndicationFeed, SyndicationItem,
+SyndicationClient,
 };
 use windows::Foundation::Uri;
 

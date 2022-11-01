@@ -12,8 +12,5 @@ features = [
     "Foundation_Collections",
     "Win32_Foundation",
     "Web_Syndication",
-    "Data_Xml_Dom",
     "Win32_UI_WindowsAndMessaging",
-    "Win32_Security",
-    "Win32_System_Threading",
 ]
