@@ -20,8 +20,8 @@ fn main() -> Result<()> {
         println!("{}", heading);
         titles.push(heading.to_string());
     }
-
-    let feedtext = titles.join("\n");
+    let mut feedtext = titles.join("\n");
+    feedtext.push('\0');
     println!("\n\n\n{}",feedtext); //professional debuggibg
 
 
