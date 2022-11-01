@@ -22,13 +22,8 @@ fn main() -> Result<()> {
     }
     let mut feedtext = titles.join("\n");
     feedtext.push('\0');
-    println!("\n\n\n{}",feedtext); //professional debuggibg
-
-
     let lptext: PCSTR = PCSTR(feedtext.as_ptr());
-    // There is something wrong!!!!!
     unsafe {
-        //lptext contains additional chars ?!
         MessageBoxA(None,lptext, s!("RSS_News"), MB_OK);
     }
 
