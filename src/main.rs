@@ -23,8 +23,9 @@ fn main() -> Result<()> {
 
     let feedtext = titles.join("\n");
     println!("\n\n\n{}",feedtext); //professional debuggibg
-    let lptext: PCSTR = PCSTR::from_raw(feedtext.as_bytes().as_ptr());
 
+
+    let lptext: PCSTR = PCSTR(feedtext.as_ptr());
     // There is something wrong!!!!!
     unsafe {
         //lptext contains additional chars ?!
